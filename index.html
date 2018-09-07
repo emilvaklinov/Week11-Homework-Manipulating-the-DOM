@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,7 +34,7 @@
     <script src="js/app.js"></script>
   </head>
 <body>
-  <h1> Visitors booking table</h1>
+  <h1> Booking table</h1>
 <form id="new-visitor-form">
   <div id="form-wrapper">
     <div class="form-visitor">
@@ -40,18 +67,53 @@
     </select>
   </div>
 
-  <div class="form-visitor">
+  <!-- <div class="form-visitor">
   <label for="gender" class="primary" >Gender:</label>
   <select id="gender" required/>
     <option value="" disabled selected></option>
     <option value="Male">Male</option>
     <option value="Female">Female</option>
-</select>
+</select> -->
+<div>
+<input type="radio" name="gender" value="male" /> Male<br />
+<input type="radio" name="gender" value="female" /> Female<br />
+</div>
+
+<!-- <form>
+  <fieldset> -->
+    <legend>Select payment</legend>
+
+    <div>
+      <input type="radio" id="cash" name="payment" checked />
+      <label for="cash">Cash</label>
+    </div>
+
+    <div>
+      <input type="radio" id="card" name="payment" />
+      <label for="card">Card</label>
+    </div>
+
+    <div>
+      <input type="radio" id="bitcoin" name="payment" />
+      <label for="bitcoin">Bitcoin</label>
+    </div>
+
+  <!-- </fieldset>
+</form> -->
 
   </div>
 </div>
+<p></p>
 <input type="submit" value="save"/>
+<p></p>
+
 </form>
+
+<button type="button" name="time"
+onclick="document.getElementById('date_time_button').innerHTML = Date()">
+ Date and Time</button>
+
+<p id="date_time_button"></p>
 <button id="dellete" type="button">Dellete all</button>
 <h2>Visitors</h2><div id="visitors"></div>
 <div> <ul id="added"></ul></div>

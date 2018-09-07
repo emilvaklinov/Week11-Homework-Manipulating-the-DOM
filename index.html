@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Visitors list</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+<body>
+  <h1> Visitors statistic table</h1>
+<form id="new-visitor-form">
+  <div id="form-wrapper">
+    <div class="form-visitor">
+      <label for="first_name" class="primary">First Name:</label>
+      <input type="text" id="first_name" required/>
+    </div>
+
+  <div class="form-visitor">
+    <label for="last_name" class="primary">Last Name:</label>
+    <input type="text" id="last_name" required/>
+  </div>
+
+  <div class="form-visitor">
+    <label for="country" class="primary">Country:</label>
+    <input type="text" id="country" required/>
+  </div>
+
+  <div class="form-visitor">
+    <label for="age" class="primary">Age:</label>
+    <select id="age" required/>
+      <option value="" disabled selected></option>
+      <option value="0-16">0-16</option>
+      <option value="17-25">17-25</option>
+      <option value="26-36">26-36</option>
+      <option value="37-47">37-47</option>
+      <option value="48-58">48-58</option>
+      <option value="59-69">59-69</option>
+      <option value="69+">69+</option>
+    </select>
+  </div>
+</div>
+<input type="submit" value="save"/>
+</form>
+<button id="dellete" type="button">Dellete all</button>
+<h2>Visitors</h2><div id="visitors"></div>
+<div> <ul id="added"></ul></div>
+
+</body>
+
+
+  </html>

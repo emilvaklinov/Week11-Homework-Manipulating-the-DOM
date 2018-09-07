@@ -13,9 +13,10 @@ const handleNewVisitorFormSubmit = function (event) {
   const lastName = event.target.last_name.value
   const country = event.target.country.value
   const age = event.target.age.value
+  const gender = event.target.gender.value
 
   paragraphResult.textContent = `First Name: ${firstName} Last Name: ${lastName}
-  Country: ${country} Age: ${age}`;
+  Country: ${country} Age: ${age} Gender: ${gender};`
   const added = document.querySelector('#added');
   added.appendChild(paragraphResult);
   document.querySelector('#new-visitor-form');

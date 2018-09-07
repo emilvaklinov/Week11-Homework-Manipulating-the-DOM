@@ -7,7 +7,7 @@
     <script src="js/app.js"></script>
   </head>
 <body>
-  <h1> Visitors statistic table</h1>
+  <h1> Visitors booking table</h1>
 <form id="new-visitor-form">
   <div id="form-wrapper">
     <div class="form-visitor">
@@ -15,7 +15,8 @@
       <input type="text" id="first_name" required/>
     </div>
 
-  <div class="form-visitor">
+  <div class="form-visitor" class="w3-hover-green">
+
     <label for="last_name" class="primary">Last Name:</label>
     <input type="text" id="last_name" required/>
   </div>
@@ -37,6 +38,16 @@
       <option value="59-69">59-69</option>
       <option value="69+">69+</option>
     </select>
+  </div>
+
+  <div class="form-visitor">
+  <label for="gender" class="primary" >Gender:</label>
+  <select id="gender" required/>
+    <option value="" disabled selected></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+
   </div>
 </div>
 <input type="submit" value="save"/>

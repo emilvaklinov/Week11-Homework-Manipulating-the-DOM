@@ -19,15 +19,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  flex-direction: column;
+  /* flex-direction: column; */
   text-align: center;
 }
 
 label.primary {
   display: block;
+  width: 500px;
 }
 
-.button {
+legend { width: 500px;}
+
+button {
   border-radius: 5%;
   padding: 5px 5px;
   color: #e83d05;
@@ -42,7 +45,7 @@ label.primary {
 }
 element.style {
     height: 50px;
-    width: 100px;
+    width: 700px;
 }
 
 h1 { text-align: center;}
@@ -57,7 +60,12 @@ h2 {
 
 }
 
+div.form-visitor{
+  flex-direction: column;
 
+}
+div { width: 500px;
+}
 
 
 input {

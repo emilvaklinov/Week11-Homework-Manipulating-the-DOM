@@ -21,12 +21,15 @@ body {
   list-style-type: none;
   text-align-last: center;
   border-collapse: collapse;
+  margin-left: 225px;
+  color: #683e05;
+
+
 }
 
 label.primary {
   display: block;
   width: 500px;
-
 }
 
 legend { width: 500px;
@@ -60,6 +63,7 @@ h2 {
     font-size: 1.8em;
     color: dark;
     margin-bottom: 20px;
+    text-decoration: underline;
 
 }
 
@@ -88,5 +92,5 @@ input#submit{
   color: #0ea035;
   display: flex;
   flex-direction: column;
-  margin-left: 230px;
+  margin-left: 225px;
 }

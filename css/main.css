@@ -20,7 +20,7 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   flex-direction: column;
-
+  text-align: center;
 }
 
 label.primary {
@@ -45,11 +45,12 @@ element.style {
     width: 100px;
 }
 
+h1 { text-align: center;}
 h2 {
     font-family: 'Special Elite', cursive;
     margin: 0px;
     padding: 0px;
-
+    text-align: center;
     font-size: 1.8em;
     color: dark;
     margin-bottom: 20px;

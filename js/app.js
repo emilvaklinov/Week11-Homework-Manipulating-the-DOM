@@ -16,9 +16,11 @@ const handleNewVisitorFormSubmit = function (event) {
   const gender = event.target.gender.value
   const payment = event.target.payment.value
   const date = event.target.date.value
+  // const time = event.target.txt.value
 
-  paragraphResult.textContent = `First Name: ${firstName} Last Name: ${lastName}
-  Country: ${country} Age: ${age} Gender: ${gender} Payment: ${payment} Date ${date};`
+
+  paragraphResult.textContent = `First Name: ${firstName} | Last Name: ${lastName} |
+  Country: ${country} | Age: ${age} | Gender: ${gender} | Payment: ${payment} | Date: ${date};`
   const added = document.querySelector('#added');
   added.appendChild(paragraphResult);
   document.querySelector('#new-visitor-form');
@@ -43,3 +45,7 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+//  $(function(){
+//     $('#date').combodate();
+// });

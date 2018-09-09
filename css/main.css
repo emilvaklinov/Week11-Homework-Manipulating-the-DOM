@@ -98,3 +98,7 @@ input#submit{
   flex-direction: column;
   margin-left: 225px;
 }
+#age {
+  width: 28% ;
+
+}

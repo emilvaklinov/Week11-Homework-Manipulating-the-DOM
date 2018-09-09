@@ -74,6 +74,10 @@ div.form-visitor{
 div { width: 500px;
 }
 
+div#txt{
+  color: #c5f1f7;
+}
+
 
 input {
     margin: .10rem;

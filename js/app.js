@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const newVisitorForm = document.querySelector('#new-visitor-form');
   newVisitorForm.addEventListener('submit', handleNewVisitorFormSubmit);
   // console.log('JavaScript loaded');
-  const button = document.querySelector('#dellete');
+  const button = document.querySelector('#delete');
   button.addEventListener('click', handleDelleteButtonClick);
 })
 

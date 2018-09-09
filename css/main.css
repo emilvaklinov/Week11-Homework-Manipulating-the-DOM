@@ -40,6 +40,12 @@ button {
   border-radius: 5%;
   padding: 5px 5px;
   color: #e83d05;
+  font-weight: bold;
+  border: 0px none;
+  border-radius: 5%;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .input {
@@ -96,7 +102,12 @@ input#submit{
   color: #0ea035;
   display: flex;
   flex-direction: column;
-  margin-left: 225px;
+  margin-left: 215px;
+  border: 0px none;
+  border-radius: 5%;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 #age {
   width: 28% ;

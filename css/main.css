@@ -21,7 +21,7 @@ body {
   list-style-type: none;
   text-align-last: center;
   border-collapse: collapse;
-  margin-left: 225px;
+  margin-left: 190px;
   color: #683e05;
 
 
@@ -52,9 +52,15 @@ button {
   border: 10px none;
   border-radius: 5%;
   padding: 5px 5px;
+}
 
+input {
+    margin: .10rem;
+    border-radius: 5%;
+    padding: 5px 5px;
 
 }
+
 element.style {
     height: 50px;
     width: 700px;
@@ -84,14 +90,6 @@ div#txt{
   color: #c5f1f7;
 }
 
-
-input {
-    margin: .10rem;
-    border-radius: 5%;
-    padding: 5px 5px;
-
-}
-
 ul#added {
   /* text-align: center; */
   width: 1500px;
@@ -112,4 +110,8 @@ input#submit{
 #age {
   width: 28% ;
 
+}
+
+#transport {
+  width:  28%;
 }

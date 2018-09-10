@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // console.log('JavaScript loaded');
   const button = document.querySelector('#delete');
   button.addEventListener('click', handleDelleteButtonClick);
+
 })
 
 const handleNewVisitorFormSubmit = function (event) {
@@ -19,9 +20,11 @@ const handleNewVisitorFormSubmit = function (event) {
   const date = event.target.date.value
   // const time = event.target.txt.value
 
+  const time = document.querySelector('#txt').textContent;
+
 
   paragraphResult.textContent = `Name: ${firstName} ${lastName} |
-  Country: ${country} | Age: ${age} | Transport: ${transport} | Gender: ${gender} | Payment: ${payment} | Date: ${date};`
+  Country: ${country} | Age: ${age} | Transport: ${transport} | Gender: ${gender} | Payment: ${payment} | Date: ${date} | Time: ${time}; `
   const added = document.querySelector('#added');
   added.appendChild(paragraphResult);
   document.querySelector('#new-visitor-form');
@@ -46,7 +49,3 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
-
-//  $(function(){
-//     $('#date').combodate();
-// });
